@@ -41,3 +41,13 @@ git merge develop
 
 Para apagar branch após ter colocado no master
 Git branch -D develop
+
+Pull /request
+- Fork para mexer no repositório
+- Clonar o repositório na máquina 
+- Iniciar o repositorio (git init)
+-Fazer mudanças e commitar
+git push origin master
+
+Entrar em pull requests do github --> New pull request --> create pull request
+Assim, o gerente do projeto recebe a notifação da mudança e pode verificar se deve mudar algo, se há algum bug

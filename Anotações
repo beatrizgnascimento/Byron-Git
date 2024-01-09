@@ -1,0 +1,43 @@
+Git Dicionário das aulas
+
+Criar repositório
+git init
+
+Mostrar commits
+git status
+
+Adicionar o commit
+git add .
+git commit -m "descrição"
+
+Colocar o código para o repositório
+git push -u origin master
+
+Pegar dados atualizados por outra pessoa no repositório github
+git pull origin main
+
+Alternar entre brances
+git checkout
+
+Ver commit
+git log
+
+
+
+Branch
+Tipos de branch no GitFlow:
+Master
+Hotfix - arruma os bugs quando tudo ja foi merge para o master
+Release
+Develop
+Feature
+
+Criar branch
+git checkout -b develop
+--- faz alterações
+Passar para o master
+git checkout master( passa para a branch master)
+git merge develop
+
+Para apagar branch após ter colocado no master
+Git branch -D develop

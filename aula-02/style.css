@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap");
+
+:root {
+  font-size: 16px;
+  font-family: "Roboto";
+  font-weight: 400;
+}
+
+.font-xs {
+  font-size: 4px;
+}
+#algumaCoisa {
+  font-size: 5px;
+}
+
+header {
+  background: lightblue;
+  margin: 0;
+  padding: 0;
+}
+
+header > nav {
+  background-color: lightpink;
+}
+
+header h1 {
+  color: green;
+}
+
+header ul,
+aside ul {
+  list-style: none;
+}
+
+aside {
+  background-color: salmon;
+}
+
+aside ul {
+  list-style: circle;
+  background-color: pink;
+}
+
+main {
+  background-color: aquamarine;
+  padding: 0.5rem 1rem;
+}
+
+main > article {
+  background-color: lightcyan;
+}
+
+footer {
+  background-color: lightgray;
+  height: 5rem;
+  text-align: center;
+}

@@ -12,6 +12,9 @@
 }
 
 .btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   background-color: var(--clr-primary);
   width: fit-content;
 
@@ -217,6 +220,15 @@ header nav a {
   gap: 20px;
 }
 
+.conhecimentos-list > li {
+  width: 72px;
+  height: 72px;
+}
+
+.conhecimentos-list > li > img {
+  width: 72px;
+}
+
 #contato {
   gap: 2rem;
   padding-block: 4rem;
@@ -234,6 +246,22 @@ header nav a {
 #contato > ul > li {
   font-size: 18px;
   font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.icon-wrapper {
+  width: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.icon-wrapper {
+  width: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #contato a {

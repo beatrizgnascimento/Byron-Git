@@ -39,7 +39,7 @@ section {
   padding: 2rem 1.5rem;
 }
 
-section > h2 {
+section h2 {
   font-size: 24px;
   font-weight: 500;
   line-height: 150%;
@@ -172,4 +172,47 @@ header nav a {
 .card > h3 {
   font-weight: 18px;
   font-weight: 500;
+}
+
+#servicos {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  background-color: var(--clr-black);
+  color: var(--clr-white);
+}
+
+.base-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.base-list > li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 1rem;
+
+  background-color: var(--clr-primary);
+
+  border-radius: 3px;
+
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.servicos-list {
+  gap: 1rem;
+}
+
+.conhecimentos-list {
+  flex-wrap: wrap;
+  gap: 20px;
 }

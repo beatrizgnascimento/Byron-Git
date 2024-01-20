@@ -49,6 +49,13 @@ section h2 {
   text-transform: uppercase;
 }
 
+@media screen and(min-widht: 1024px) {
+  section {
+    max-width: 1180px;
+    margin: 0 auto;
+  }
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -79,6 +86,12 @@ header nav a {
   text-decoration: none;
 }
 
+@media screen and (min-width: 1024px) {
+  header nav {
+    display: flex;
+  }
+}
+
 #home {
   justify-content: center;
 
@@ -96,9 +109,9 @@ header nav a {
   height: 400px;
   padding-inline: 1.5rem;
 
-  background-image: url("/portfolio/assets/css/darth-full.png");
+  background-image: url("/portfolio/img/darth-mobile.png");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: end;
   background-size: 300px;
 }
 
@@ -132,6 +145,23 @@ header nav a {
   margin: 0;
 }
 
+@media screen and(min-width: 1024px) {
+  #home {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #home > img {
+    display: block;
+    width: 444px;
+    height: 444px;
+  }
+
+  .home-cta {
+    background: none;
+  }
+}
+
 #sobre {
   display: flex;
   flex-direction: column;
@@ -140,8 +170,9 @@ header nav a {
   color: var(--clr-white);
 }
 
-#sobre > img {
+.mobile-sobre > img {
   border-radius: 12px;
+  width: 100%;
 }
 
 .sobre-links {
@@ -149,6 +180,36 @@ header nav a {
   justify-content: space-between;
   gap: 1.5rem;
   width: 100%;
+}
+
+.desktop-sobre > img {
+  max-width: 460px;
+  border-radius: 12px;
+}
+
+.sobre-left {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.desktop-sobre {
+  display: none;
+  gap: 1.5rem;
+}
+
+@media screen and(min-width: 1024px) {
+  .mobile-sobre {
+    display: none;
+    flex-direction: row;
+  }
+  .desktop-sobre {
+    display: flex;
+    gap: 92px;
+  }
+  .desktop-sobre > h2 {
+    margin: 0;
+  }
 }
 
 #projetos {
@@ -159,6 +220,7 @@ header nav a {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  align-items: center;
 }
 
 .card {
@@ -166,6 +228,7 @@ header nav a {
   color: var(--clr-white);
   padding: 1.25rem;
   border-radius: 4px;
+  max-width: 250px;
 }
 
 .card > img {
@@ -175,6 +238,17 @@ header nav a {
 .card > h3 {
   font-weight: 18px;
   font-weight: 500;
+}
+
+@media screen and(min-width: 1024px) {
+  #projetos {
+    align-items: center;
+  }
+  .cards-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 #servicos {
@@ -229,6 +303,23 @@ header nav a {
   width: 72px;
 }
 
+@media screen and(min-width: 1024px) {
+  #servicos {
+    flex-direction: row;
+  }
+  #servicos > div {
+    flex-basis: 50%;
+  }
+  .servicos-list {
+    flex-direction: column;
+    max-width: 64px;
+    height: 123px;
+  }
+  .servicos-list > li {
+    justify-content: start;
+  }
+}
+
 #contato {
   gap: 2rem;
   padding-block: 4rem;
@@ -278,6 +369,12 @@ header nav a {
   font-size: 18px;
   font-weight: 500;
   font-style: normal;
+}
+
+@media screen and(min-width: 1024px) {
+  #contato {
+    align-items: center;
+  }
 }
 
 footer {
